@@ -26,7 +26,7 @@
     "finalhandler": "^0.5.0",
     "fs-extra": "^2.0.0",
     "globule": "^1.1.0",
-    "ipfs-api": "^14.0.3",
+    "ipfs-api": "git+https://github.com/atfornes/js-ipfs-api.git",
     "merge": "^1.2.0",
     "orbit-db": "^0.17.3",
     "serve-static": "^1.11.1",
