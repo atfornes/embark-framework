@@ -332,9 +332,9 @@ EmbarkJS.Messages.setProvider = function(provider, options) {
     } else if (provider === 'orbit') {
         this.currentMessages = EmbarkJS.Messages.Orbit;
         if (options === undefined) {
-            ipfs = HaadIpfsApi('localhost', '5001');
+            ipfs = IpfsApi('localhost', '5001');
         } else {
-            ipfs = HaadIpfsApi(options.server, options.port);
+            ipfs = IpfsApi(options.server, options.port);
         }
         this.currentMessages.orbit = new Orbit(ipfs);
         this.currentMessages.orbit.connect(web3.eth.accounts[0]);
